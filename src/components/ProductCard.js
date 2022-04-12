@@ -10,18 +10,26 @@ import fashion from "../media/fashion.png";
 import grocery from "../media/grocery.jpg";
 import mobile from "../media/mobile.jpg";
 
-const ProductCard = ({ name, price, originalprice, desc, category,imgurl }) => {
+const ProductCard = ({
+  name,
+  price,
+  originalprice,
+  desc,
+  category,
+  imgurl,
+}) => {
   return (
     <>
-      <Card className="productcard">
-        <CardMedia
-          component="img"
-          height="200"
-          image={
-           imgurl
-          }
-          
-        />
+      <Card
+        className="productcard"
+        sx={{
+          transition: "all .6s",
+          "&:hover": {
+            transform: "scale(1.1)",
+          },
+        }}
+      >
+        <CardMedia component="img" height="200" image={imgurl} />
         <CardContent>
           <Typography gutterBottom variant="h4" component="div">
             {name}

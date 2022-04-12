@@ -1,20 +1,19 @@
 .products {
-  
   margin-top: 14rem;
   padding-bottom: 10rem;
   margin-left: 20%;
-  margin-right: 10%;
+  margin-right: 5%;
   display: flex;
   // justify-content: space-around;
   flex-wrap: wrap;
 
-  @include respond(phone){
+  @include respond(phone) {
     margin-left: 40%;
     margin-right: 5%;
   }
 
   > * {
-    margin-right: 2.5rem;
+    margin-right: 3rem;
     margin-bottom: 3rem;
   }
 
@@ -35,9 +34,16 @@
 
 .productcard {
   width: 22%;
-
+  cursor: pointer;
+  transition: transform 2s;
+  transform: scale(1);
 
   @include respond(phone) {
     width: 90%;
   }
+
+  // &:hover {
+  //   transform: scale(1.1);
+  //   transition: all 2s;
+  // }
 }
