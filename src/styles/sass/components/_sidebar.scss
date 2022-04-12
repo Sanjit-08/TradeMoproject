@@ -1,0 +1,19 @@
+.sidebar{
+    &__categorylist{
+        margin-top: 1rem;
+        list-style: none;
+        z-index: 1000 !important;
+       
+    }
+
+    &__categoryitems{
+        cursor: pointer;
+        margin-bottom: 1rem;
+        font-size: 2rem;
+        color:black;
+
+        &:hover{
+            color:white;
+        }
+    }
+}

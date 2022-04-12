@@ -4,17 +4,23 @@ import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import { Typography } from "@mui/material";
-import image from "../media/footwear1.jpg";
+import footwear from "../media/footwear1.jpg";
+import home from "../media/bedsheet.jpg";
+import fashion from "../media/fashion.png";
+import grocery from "../media/grocery.jpg";
+import mobile from "../media/mobile.jpg";
 
-const ProductCard = ({ name, price, originalprice, desc, category }) => {
+const ProductCard = ({ name, price, originalprice, desc, category,imgurl }) => {
   return (
     <>
       <Card className="productcard">
         <CardMedia
           component="img"
           height="200"
-          image={image}
-          alt="green iguana"
+          image={
+           imgurl
+          }
+          
         />
         <CardContent>
           <Typography gutterBottom variant="h4" component="div">
