@@ -11,7 +11,7 @@ import {getProduct} from "./redux/productSlice";
 
 function App() {
   const productdata = useSelector((state)=>state.product.data);
-  console.log("Toolkit",productdata);
+  
   const dispatch=useDispatch();
   
   return (

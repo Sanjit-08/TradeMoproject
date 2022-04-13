@@ -13,7 +13,7 @@ const productSlice = createSlice({
   reducers: {
     getProduct(state,action) {
        state.data= action.payload.filterdata;
-    console.log("Payload",action.payload);
+   
     },
    
   },

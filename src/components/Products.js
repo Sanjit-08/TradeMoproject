@@ -4,21 +4,16 @@ import data from "../products";
 import { useSelector,useDispatch } from "react-redux";
 
 const Products = () => {
-  console.log(data);
+  
   
   const pdata = useSelector((state)=>state.product.data);
   
-  //   const filterdata = data.products.filter(
-  //     (item) => item.category == "Footwear"
-  //   );
-  //   setPdata(filterdata);
-  //   console.log("F", filterdata);
-  // }, []);
+ 
   return (
     <div className="products">
       {pdata &&
         pdata.length > 0 &&
-        pdata.map((item) => {
+        pdata.map((item,index) => {
           return (
             <ProductCard
               name={item.name}
@@ -27,6 +22,7 @@ const Products = () => {
               desc={item.desc}
               category={item.category}
               imgurl={item.imgurl}
+              key={index}
             ></ProductCard>
           );
         })}

@@ -24,6 +24,7 @@ const ProductCard = ({
         className="productcard"
         sx={{
           transition: "all .6s",
+          boxShadow:"rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;",
           "&:hover": {
             transform: "scale(1.1)",
           },
@@ -39,8 +40,8 @@ const ProductCard = ({
           </Typography>
           <Typography gutterBottom variant="h5">
             <div className="products__pricebox">
-              <div class="products__discountedprice"> &#8377;{price}</div>
-              <div class="products__originalprice"> &#8377;{originalprice}</div>
+              <div className="products__discountedprice"> &#8377;{price}</div>
+              <div className="products__originalprice"> &#8377;{originalprice}</div>
             </div>
           </Typography>
         </CardContent>

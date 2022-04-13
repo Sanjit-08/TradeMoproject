@@ -84,12 +84,12 @@ const Sidebar = () => {
   }, [category, pricevalue]);
 
   const handleDelete = () => {
-    console.info("You clicked the delete icon.");
+    
     setCategory("");
   };
 
   const handlePriceDelete = () => {
-    console.info("You clicked the delete icon.");
+   
     setPriceLabel("");
     setPriceValue([100, 1000]);
   };
@@ -150,7 +150,7 @@ const Sidebar = () => {
           <ListItem disablePadding sx={{ width: "85%", marginTop: "15px" }}>
             <Slider
               value={pricevalue}
-              aria-label="Default"
+              
               valueLabelDisplay="auto"
               getAriaValueText={valuetext}
               width="60%"
@@ -189,6 +189,7 @@ const Sidebar = () => {
                 <li
                   className="sidebar__categoryitems"
                   onClick={() => handleCategoryChange(item)}
+                  key={item}
                 >
                   {item}
                 </li>
