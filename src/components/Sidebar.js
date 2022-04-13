@@ -129,7 +129,7 @@ const Sidebar = () => {
           <Chip
             label={category}
             onDelete={handleDelete}
-            sx={{ width: "80%", fontSize: "17px" }}
+            sx={{ width: "80%", fontSize: "20px" }}
           />
         )}
 

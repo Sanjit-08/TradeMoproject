@@ -1,6 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
-import { useEffect } from "react";
+import React  from "react";
 import "./styles/sass/main.scss";
 import Navbar from "../src/components/Navbar";
 import Sidebar from "../src/components/Sidebar";

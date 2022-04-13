@@ -10,7 +10,8 @@ import reportWebVitals from './reportWebVitals';
 
 
 
-ReactDOM.render(
+
+ReactDOM.hydrate(
   <React.StrictMode>
     <Provider store={store}>
     
